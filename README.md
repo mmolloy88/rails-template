@@ -126,7 +126,7 @@ information.
 
 ##### 9. Describe the way tasks are planned and tracked in your project.
 
-<img src="./docs/planning_tools.png"/>
+<img src="./docs/trello.png" width="500px"/> 
 
 using the inbuilt trello board in GitHub is a great help and having wireframes and a site map to work off. 
 Additionally I've been keeping handwritten notes in my notepad to help keep track of certain terminal codes.
