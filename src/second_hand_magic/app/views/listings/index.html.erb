@@ -1,0 +1,25 @@
+
+
+<%= link_to "sell cards", new_listing_path, class: "button is-dark" %>
+
+<div class="container">
+     
+            <% for listing in @listings %>
+
+                    <p class="title"> <%= link_to "#{listing.card_name}", listing_path(listing.id) %></p>
+                        <div class="card-image">
+                            <div class="content">
+                                <%= image_tag listing.picture if listing.picture.attached? %>
+                            </div>
+                        </div>
+                    <p class="subtitle">  <%= link_to "#{number_to_currency(listing.price)}", listing_path(listing.id) %> </p>
+                  <br>
+            <% end %>
+
+            </div>
+
+      
+
+   
+
+

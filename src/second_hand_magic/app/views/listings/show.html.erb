@@ -1,0 +1,56 @@
+
+
+<section class="hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+        <h2 class="title"> <%= @listing.card_name %> </h2>
+
+        <div class="columns">
+            <div class="column">
+
+                <% if @listing.picture.attached? %>
+                    <%= image_tag @listing.picture, style: "width: 200px" %>
+                <% end %>
+
+            </div>
+
+
+            <div class="column">
+                <hr>
+                <%= number_to_currency(@listing.price) %>
+                <br/>
+
+                <%= "Card type:" %> <%= @listing.card_type %>
+                <br/>
+
+                <%= "Condition:" %> <%= @listing.condition %>
+                <br>
+                <br>
+                <button type="button">Buy</button>
+            </div>
+        </div>
+
+<br><br>
+
+        <div class="columns">
+            <div class="column">
+                <% if current_user.id == @listing.user.id%>
+                <%= link_to "edit", edit_listing_path(@listing.id), class: "button is-dark" %>
+            </div>
+
+            <div class="column">
+                <%= form_with model: @listing, local: true, method: "delete" do |form| %>
+                <%= submit_tag "delete", class: "button is-dark" %>
+            </div>
+        </div>
+        
+        </br>
+            
+
+            </div>
+        </div>
+</section>
+
+    <% end %>
+<% end %>

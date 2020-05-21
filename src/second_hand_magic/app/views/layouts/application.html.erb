@@ -10,6 +10,62 @@
   </head>
 
   <body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div style="width="112" height="40","class="navbar-brand">
+      <h2 class="title"> Second hand magic</h2>
+    </div>
+  
+      <div class="navbar-end">
+        <div class="buttons">
+          <a class="navbar-item">
+            <%= link_to "back to catalogue", listings_path, class: "button is-dark" %>
+          </a>
+
+          <% if user_signed_in? %>
+            <%= link_to "log out", destroy_user_session_path, method: :delete, class: "button is-dark" %>
+          <% else %>
+            <%= link_to "log in/sign up", new_user_session_path, class: "button is-dark" %>
+          <% end %>
+        </div>
+      </div>
+
+  </nav>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
+
+    
   </body>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+
+      <p> if you're feeling generous, you can choose to donate some money to keep the lights on </p>
+      <button data-stripe="donation", class: "button is-dark> make a donation </button>
+
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="https://js.stripe.com/v3/"></script> 
+
+<script> 
+    document 
+        .querySelector("[data-stripe='donate']") 
+        .addEventListener("click", () => { 
+            const stripe = Stripe( 
+                "<%= Rails.application.credentials.dig(:stripe, :public_key) %>"
+                ); 
+                
+        stripe.redirectToCheckout({ 
+            sessionId: "<%= @session_id %>" 
+        }); 
+    }); 
+</script>
+
 </html>

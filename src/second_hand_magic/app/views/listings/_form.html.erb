@@ -1,0 +1,58 @@
+<% if listing.errors.any? %>
+    <ul>
+        <%listing.errors.full_messages.each do |error|%>
+
+        <li> <%= error %> </li>
+        <% end %>
+    </ul>
+<% end %>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+
+            <h3 class="title"> New listing </h3>
+
+        </div>
+    </div>
+</section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+
+        <%= form_with model: listing, local: true do |form| %>
+            <div class="field">
+                <%= form.label "card name: " %>    
+                <%= form.text_field :card_name, value: listing.card_name, style: "width:25%", class: "input is-primary" %>    
+            </div>
+                <br>
+            <div class="field">
+                <%= form.label "card type: " %>    
+                <%= form.text_field :card_type, value: listing.card_type, style: "width:25%", class: "input is-primary" %>    
+            </div>
+                <br>
+            <div class="field">
+                <%= form.label "condition: " %>    
+                <%= form.text_field :condition, value: listing.condition, style: "width:25%", class: "input is-primary" %>    
+            </div>
+                <br>
+            <div class="field">
+                <%= form.label :price %>    
+                <%= form.number_field :price, value: listing.price, step: :any, style: "width:25%", class: "input is-primary" %>    
+            </div>
+                <br>
+            <div>
+                <%= form.label :picture %>    
+                <%= form.file_field :picture, accept: "image/png,image/gif,image/jpeg,image/jpg" %>    
+            </div>
+                <br>
+            <div>
+                <%= form.submit "submit", class: "button is-dark" %>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+<% end %>

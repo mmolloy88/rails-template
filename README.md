@@ -1,23 +1,23 @@
 # My 2 way market place template
 
 Link to the deployed app: www.myapp.com 
-Link to github repo: www.github.myrepo.com
+Link to github repo: https://github.com/mmolloy88/rails-template
 
 ## Section 1: Requirement checklist 
-
+✓
 Each time you have completed a requirement check it off the list. This way it will be easy for the educators as well as yourselves to track your progress.
 
 
-- [ ] 1. Create your app using Ruby on Rails.
-- [ ] 2. Use Postgresql database in development and production.
-- [ ] 3. My app has authentication (eg. Devise).
-- [ ] 4. My app has authorisation (i.e. users have restrictions on what they can see and edit).
-- [ ] 5. My app has some type of file (eg. images) uploading capability.
+- [✓] 1. Create your app using Ruby on Rails.
+- [✓] 2. Use Postgresql database in development and production.
+- [✓] 3. My app has authentication (eg. Devise).
+- [✓] 4. My app has authorisation (i.e. users have restrictions on what they can see and edit).
+- [✓] 5. My app has some type of file (eg. images) uploading capability.
 - [ ] 6. My app is deployed to Heroku (recommended) or AWS.
-- [ ] 7. I have identified the problem I am trying to solve by building this particular marketplace app.
-- [ ] 8. I have explained why is it a problem that needs solving.
+- [✓] 7. I have identified the problem I am trying to solve by building this particular marketplace app.
+- [✓] 8. I have explained why is it a problem that needs solving.
 - [ ] 9. I have provided a link (URL) to my deployed app (i.e. website)
-- [ ] 10. I have provided a link to my GitHub repository (repo). I have ensured the repo is accessible by my Educators.
+- [✓] 10. I have provided a link to my GitHub repository (repo). I have ensured the repo is accessible by my Educators.
 - [ ] 11. I have a complete description of my marketplace app (website), including:  
         - 11.1 Purpose  
         - 11.2 Functionality / features  
@@ -27,8 +27,8 @@ Each time you have completed a requirement check it off the list. This way it wi
         - 11.6 Tech stack (e.g. html, css, deployment platform, etc)  
 
 - [ ] 12. I have provided user stories for my app
-- [ ] 13. I have provided Wire-Frames for my app 
-- [ ] 14. I have provided an ERD for my app
+- [✓] 13. I have provided Wire-Frames for my app 
+- [✓] 14. I have provided an ERD for my app
 - [ ] 15. I have explained the different high-level components (abstractions) in my app
 - [ ] 16. I have listed and described any third party services that your app will use
 - [ ] 17. I have described my projects models in terms of the relationships (active record associations) they have with each other.
@@ -46,20 +46,33 @@ NB Slide/Presentation specific requirements
 ### Rubric Criteria
 
 ## Section 2: Documentation 
-NB leave the Titles as they are and answer the questions below.
+
 
 ##### 1. Explain the different high-level components (abstractions) in your App.
-* Includes a complete and detailed description of third party services used in the app
+This site allows users to sign up and log in to the website. There is a catalogue of the current items for sale that
+the user can browse through, they may also list their own cards on the site. once a listing is made the user that
+owns the listing can log in and edit or delete it, if necessary.
+
+if there is an issue with the listing, for example, there is no price, there will be an error message and the person
+making the listing will be prompted to fix this mistake before they are able to submit the listing.
 
 ##### 2. List and describe any 3rd party services.
-* Precisely explains and shows understanding of the different high-level components of the app
+Second Hand Magic is utilises both Heroku to host the project as well as Stripe to send Donations to the developer.
+
+the Bulma gem has been used to add some styling to Second Hand Magic. 
 
 ##### 3.1. Identify the problem you’re trying to solve by building this particular marketplace App?
-* Demonstrates a full understanding of the problems that exist in a relevant marketplace that needs disrupting
 
+While there are already existing marketplaces for second hand Magic: The Gathering cards, my goal is to abstract and 
+simplify the process, making it simple for people to list and sell there old Magic cards. 
 
 ##### 3.2 Why is the problem identified a problem that needs solving?
-* Demonstrates a full understanding of the problems that exist in a relevant marketplace that needs disrupting
+Trading card game products are generally sold in large number and usually come in a randomized pack, not knowing what
+the customer is going to get can be exciting, but often leaves them with a surplus of cards that they don't want. 
+
+Some retailers offer to buy or trade these cards from the collector, however, particularly with the current climate it
+is hard or impossible to do this in a physical store, additionally not every retailer that sells trading cards offers
+this service.  
 
 ##### 4. Describe your project’s models in terms of the relationships (active record associations) they have with each other.
 * Complete discussion of the project’s models with an understanding of how its active record associations function
