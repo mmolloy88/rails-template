@@ -1,6 +1,6 @@
 # My 2 way market place template
 
-Link to the deployed app: www.myapp.com 
+Link to the deployed app: https://safe-sierra-87003.herokuapp.com/
 Link to github repo: https://github.com/mmolloy88/rails-template
 
 ## Section 1: Requirement checklist 
@@ -13,10 +13,10 @@ Each time you have completed a requirement check it off the list. This way it wi
 - [✓] 3. My app has authentication (eg. Devise).
 - [✓] 4. My app has authorisation (i.e. users have restrictions on what they can see and edit).
 - [✓] 5. My app has some type of file (eg. images) uploading capability.
-- [ ] 6. My app is deployed to Heroku (recommended) or AWS.
+- [✓] 6. My app is deployed to Heroku (recommended) or AWS.
 - [✓] 7. I have identified the problem I am trying to solve by building this particular marketplace app.
 - [✓] 8. I have explained why is it a problem that needs solving.
-- [ ] 9. I have provided a link (URL) to my deployed app (i.e. website)
+- [✓] 9. I have provided a link (URL) to my deployed app (i.e. website)
 - [✓] 10. I have provided a link to my GitHub repository (repo). I have ensured the repo is accessible by my Educators.
 - [ ] 11. I have a complete description of my marketplace app (website), including:  
         - 11.1 Purpose  
@@ -78,8 +78,11 @@ this service.
 * Complete discussion of the project’s models with an understanding of how its active record associations function
 
 ##### 5. Discuss the database relations to be implemented.
-![This is an image of your ERD](This is the relative path to it)
-* Provides coherent discussion of the database relations, with reference to the ERD
+<img src="./docs/secondhandmagic_ERD.png"/>
+
+There are 4 main catagories that are stored in the application. They are the Users and their log in information, the listings,
+which a single user may have many listed on the site. As well as the orders that can be made, which can be made up of multiple
+items but only 1 order can be placed at one time. 
 
 
 ##### 6. Provide your database schema design.
@@ -91,11 +94,10 @@ this service.
 * User stories are well thought out, relevant, and comprehensively cover the needs of the app
 
 ##### 8. Provide Wireframes for your App.
-![This is an image of your wire frames](This is the relative path to it)  
-![This is an image of your wire frames](This is the relative path to it)  
-![This is an image of your wire frames](This is the relative path to it)  
-![This is an image of your wire frames](This is the relative path to it)  
-![This is an image of your wire frames](This is the relative path to it)  
+<img src="./docs/homepage_login_wf.png"/> 
+<img src="./docs/listin_view_wf.png"/>  
+<img src="./docs/create_listing_wf.png"/> 
+
 * More than five detailed and well designed wireframes provided, for several different screen sizes (as required for the app)
 
 ##### 9. Describe the way tasks are planned and tracked in your project.
