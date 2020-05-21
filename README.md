@@ -35,12 +35,6 @@ Each time you have completed a requirement check it off the list. This way it wi
 - [✓] 19. I have provided my database schema design
 - [✓] 20. I have described the way tasks are allocated and tracked in my project
 
-NB Slide/Presentation specific requirements
-
-- [ ] 21. An outline of the problem I solved by building this particular marketplace app, and why it’s a problem that needs solving.
-- [ ] 22. A well planned walkthrough of my app
-- [ ] 23. I have practived my presentation at least once and it is 5-6 minutes long. 
-
 
 ### Rubric Criteria
 
