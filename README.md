@@ -94,9 +94,9 @@ items but only 1 order can be placed at one time.
 * User stories are well thought out, relevant, and comprehensively cover the needs of the app
 
 ##### 8. Provide Wireframes for your App.
-<img src="./docs/homepage_login_wf.png"/> 
-<img src="./docs/listin_view_wf.png"/>  
-<img src="./docs/create_listing_wf.png"/> 
+<img src="./docs/homepage_login_wf.png" width="350px"/> 
+<img src="./docs/listing_view_wf.png" width="350px"/>  
+<img src="./docs/create_listing_wf.png" width="350px"/> 
 
 * More than five detailed and well designed wireframes provided, for several different screen sizes (as required for the app)
 
